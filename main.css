@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.register{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url(bg-intro-desktop.png);
+    background-size: cover;
+}
+.register .content{
+    max-width: 800px;
+    text-align: center;
+}
+.register .content h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+.register .content p {
+    font-weight: 300;
+    color: #fff;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .registerInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .registerInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 16px;
+}
+.text h1{
+    font-size: 50px;
+}
+.container .registerInfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.registerForm{
+    float: left;
+    border-radius: 8px;
+    width: 500px;
+    padding-top: 40px;
+    background: #fff;
+}
+.topbox {
+    border-radius: 8px;
+    width: 40%;
+    padding: 40px;
+    background: transparent;
+}
+
+.topbox button{
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+
+
+.registerForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.registerForm .inputBox{
+    width: 100%;
+    margin-top: 10px;
+}
+.registerForm .inputBox span {
+    position: relative;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: hsl(0, 100%, 74%) ;
+}
+.registerForm .inputBox input:focus ~ span, 
+.registerForm .inputBox input:valid ~ span 
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.registerForm .inputBox input[type="submit"]{
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    /* padding: 10px; */
+    font-size: 18px;
+}
+@media (max-width: 991px) {
+    .register{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .registerInfo{
+        margin-bottom: 40px;
+    }
+    .container .registerInfo, .registerForm{
+        width: 100%;
+    }
+}
+
+input {
+    padding-left: 30px;
+  }
+  ::-webkit-input-placeholder {
+    text-align: left;
+    padding-left: 30px;
+
+  }
+  :-moz-placeholder {
+    text-align: center;
+    padding-left: 30px;
+  }
+  .all{
+    float: left;
+  }
+.top {    
+    color: white;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: hsl(248, 32%, 49%);
+    padding: 14px 28px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    cursor: pointer;
+    text-align: center;
+}
+.terms{
+    font-size: 10px;
+}
+.red{
+    color: red;
+}
+.submit{
+    color: white;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    opacity: 1;
+    transition: 0.3s;
+  
+}
+.submit:hover {opacity: 0.6}
+.invalid-feedback{
+    text-align: right;
+}
